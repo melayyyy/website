@@ -1,0 +1,118 @@
+/* waves.css */
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #142d4c;
+    color: #fff;
+    padding: 0.1rem;
+    font-size: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+    margin-left: 80%;
+}
+
+nav ul li {
+    display: inline;
+    background-color: #142d4c;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+#Title {
+    color: #fff;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+img {
+    width: 30%;
+    border-radius: 8px;
+    margin-left: 15%;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 5px;
+}
+
+.text {
+    color: white;
+    max-width: 40%;
+    margin-right: 10%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-right: 15%;
+    margin-bottom: 15px;
+}
+.arrow-button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    background-color: #142d4c;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.arrow-button:hover {
+    background-color: #bbe4e9;
+    color: #142d4c;
+}
+
+.button-container a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #142d4c;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button-container a:hover {
+    background-color: #bbe4e9;
+}
+
+footer {
+    background-color: #142d4c;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    font-size: 14px;
+    margin-top: 4.5%;
+}

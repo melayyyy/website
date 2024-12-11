@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #268fbb;
+    color: #333;
+}
+
+header {
+ 
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 90%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #fff;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#Title {
+    color: #fff;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#intro {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+/* Image Gallery Styles */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.image-item {
+    flex: 1 1 calc(25% - 20px);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: left;
+    max-width: 300px;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #bbe4e9;
+}
+
+.image-item h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 1rem 0;
+    color: #142d4c;
+}
+
+.image-item a {
+    text-decoration: none;
+}
+
+.image-item p {
+    font-size: 1rem;
+    margin: 0.5rem 1rem 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .image-item {
+        flex: 1 1 100%;
+    }
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping, ensuring one row */
+    justify-content: space-between; /* Spreads the images evenly */
+    gap: 20px; /* Adds space between the images */
+}
+
+.image-item {
+    flex: 0 0 calc(25% - 20px); /* Each item takes 25% of the row width minus gap */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 300px; /* Ensures a maximum width for each item */
+}
+footer {
+    background-color: #142d4c;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    font-size: 14px;
+    margin-top: 4%;
+}
+
